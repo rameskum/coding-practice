@@ -7,4 +7,4 @@
 
 ## ALGO-MONSTER
 
-- [Stack Intro](/algo-monster/stack.md)
+- [Stack Intro](/algo-monster/stack-intro.md)
