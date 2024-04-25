@@ -9,3 +9,4 @@
 
 - [Stack Intro](/algo-monster/stack-intro.md)
 - [Queue Intro](/algo-monster/queue-intro.md)
+- [HashMap Intro](/algo-monster/hash-map-intro.md)
