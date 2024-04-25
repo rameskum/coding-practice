@@ -8,3 +8,4 @@
 ## ALGO-MONSTER
 
 - [Stack Intro](/algo-monster/stack-intro.md)
+- [Queue Intro](/algo-monster/queue-intro.md)
