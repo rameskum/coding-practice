@@ -3,6 +3,8 @@
 [link](https://algo.monster/problems/stack_intro)
 
 ```python
+from typing import List
+
 def execute(program: List[str]) -> List[int]:
     stack = []
     for command in program:
