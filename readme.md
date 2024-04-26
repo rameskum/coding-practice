@@ -9,7 +9,13 @@
 
 ### Getting Started
 
+#### Basics Data Structure
+
 - [Stack Intro](/algo-monster/stack-intro.md)
 - [Queue Intro](/algo-monster/queue-intro.md)
 - [HashMap Intro](/algo-monster/hash-map-intro.md)
 - [Python Basic Data Structure](/algo-monster/python-datastructure.md)
+
+#### Basic Algorithms
+
+- [Sorting Intro](/algo-monster/sorting-intro.md)
