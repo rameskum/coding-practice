@@ -19,3 +19,5 @@
 #### Basic Algorithms
 
 - [Sorting Intro](/algo-monster/sorting-intro.md)
+- [Advanced Sorting Algo](/algo-monster/advanced-sorting-algo.md)
+- [Custom Comparator](/algo-monster/custom-comparator.md)
