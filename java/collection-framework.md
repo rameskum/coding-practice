@@ -43,13 +43,41 @@ System.out.println(animals.pop()); // Dog
 
 ### Set
 
+- Does not allow duplicate elements.
+
 #### EnumSet
+
+- It can contain only enum values
+- It doesn’t allow to add null values
+- It’s not thread-safe
+- The elements are stored following the order in which they are declared in the enum
+- It uses a fail-safe iterator
 
 #### HashSet
 
+- no order of insertion
+- `add` method to add an element
+- `remove` method to remove an element
+- `contains` method to check if the element is present in the set
+
+```java
+import java.util.Set;
+
+Set<Integer> set = new HashSet<>();
+set.add(2);
+set.add(2);
+
+System.out.println(set.size()); // 1
+System.out.println(set); // [2]
+```
+
 #### LinkedHashSet
 
+- Works the same as HashSet but maintains the insertion order.
+
 #### TreeSet
+
+- Works the same as HashSet but maintains the order as Sorted
 
 ### Queue
 
@@ -58,11 +86,11 @@ FIFO: First In, First Out
 #### ArrayDeque
 
 - Uses arrays to implement the queue functionality.
-- Can add and remove elements from start and end of the queue.
+- Can add and remove elements from the start and end of the queue.
 - `offer` method to add an element
 - `poll` method to get the first element
-- `offerFirst` method to add element at the beginning
-- `offerLast` method to add element at the end
+- `offerFirst` method to add an element at the beginning
+- `offerLast` method to add an element at the end
 - `peekFirst`
 - `peekLast`
 - `pollFirst`
@@ -81,7 +109,7 @@ System.out.println(queue.poll()); // 12
 
 #### LinkedList
 
-Similar example as `ArrayDeque` and `ArrayList`
+Similar as `ArrayDeque` and `ArrayList`
 
 #### PriorityQueue
 
