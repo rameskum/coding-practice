@@ -127,15 +127,36 @@ System.out.println(pQueue.poll()); // -2
 
 ## Map
 
+### HashTable
+
 ### HashMap
 
+It is used to store Key-Value pairs, allowing you to access information based on unique keys.
+
+- Fast access
+- Unsynchronized unlike HashTable
+- No order guarantee
+
 ### TreeMap
+
+Stores the key-value pair in sorted order. This sorting is based on the natural ordering of the keys or a custom comparator you provide during creation.
+
+- The `Key` must be a Comparable
 
 ### EnumMap
 
 ### LinkedHashMap
 
+LinkedHashMap in Java is a special kind of Map implementation that combines the benefits of both HashMap and LinkedLists.
+
+- Ordered elements: Insertion order is maintained
+
 ### WeakHashMap
+
+- Unlike standard HashMap where keys are strongly referenced, WeakHashMap uses WeakReference for its keys. This means the garbage collector (GC) can reclaim the key objects even if they are still in the WeakHashMap.
+- As soon as there are no other references to the key object outside the WeakHashMap, the GC can remove it, and the corresponding key-value pair gets automatically eliminated from the map.
+- Prevents memory leaks
+- Cache implementation: WeakHashMap is a good foundation for building caches where entries can expire automatically when the key objects are no longer referenced.
 
 ## Iterator
 
