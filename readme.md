@@ -22,6 +22,11 @@
 - [Advanced Sorting Algo](/algo-monster/advanced-sorting-algo.md)
 - [Custom Comparator](/algo-monster/custom-comparator.md)
 
+### BFS
+
+- [Level order traversal](/algo-monster/bfs-fundamentals.md#level-order-traversal)
+- [Zig-Zag Level Order Traversal](/algo-monster/bfs-fundamentals.md#zigzag-level-order-traversal)
+
 ## JAVA
 
 ### [Collection Framework](/java/collection-framework.md)
