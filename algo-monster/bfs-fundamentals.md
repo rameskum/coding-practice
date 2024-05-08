@@ -7,6 +7,7 @@ We can use a queue for BFS traversal.
   - [Level Order Traversal](#level-order-traversal)
   - [ZigZag Level Order Traversal](#zigzag-level-order-traversal)
   - [Binary Tree Right Side View](#binary-tree-right-side-view)
+  - [Binary Tree Min Depth](#binary-tree-min-depth)
 
 ## Level Order Traversal
 
@@ -102,5 +103,37 @@ public static List<Integer> binaryTreeRightSideView(Node<Integer> root) {
         }
     }
     return ans;
+}
+```
+
+## Binary Tree Min Depth
+
+![binary-tree-min-depth](./resources/binary-tree-min-depth.png)
+
+```java
+import java.util.Queue;
+import java.util.LinkedList;
+
+public static int binaryTreeMinDepth(Node<Integer> root) {
+    int depth = 0;
+    if(root == null) return depth;
+
+    Queue<Node<Integer>> queue = new LinkedList<>();
+    queue.offer(root);
+
+    while(!queue.isEmpty()) {
+        int n = queue.size();
+        for(int i = 0; i < n; i++) {
+            Node<Integer> node = queue.poll();
+
+            if(node.left == null && node.right == null)
+                return depth;
+
+            if(node.left != null) queue.offer(node.left);
+            if(node.right != null) queue.offer(node.right);
+        }
+        depth += 1;
+    }
+    return depth;
 }
 ```
