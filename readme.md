@@ -27,6 +27,7 @@
 - [Level order traversal](/algo-monster/bfs-fundamentals.md#level-order-traversal)
 - [Zig-Zag Level Order Traversal](/algo-monster/bfs-fundamentals.md#zigzag-level-order-traversal)
 - [Binary Tree Right Side View](/algo-monster/bfs-fundamentals.md#binary-tree-right-side-view)
+- [Binary Tree Min Depth](/algo-monster/bfs-fundamentals.md#binary-tree-min-depth)
 
 ## JAVA
 
