@@ -6,6 +6,7 @@ We can use a queue for BFS traversal.
 - [BFS](#bfs)
   - [Level Order Traversal](#level-order-traversal)
   - [ZigZag Level Order Traversal](#zigzag-level-order-traversal)
+  - [Binary Tree Right Side View](#binary-tree-right-side-view)
 
 ## Level Order Traversal
 
@@ -71,5 +72,35 @@ public static List<List<Integer>> zigZagTraversal(Node<Integer> root) {
         lot.add(new ArrayList(newLevel));
     }
     return lot;
+}
+```
+
+## Binary Tree Right Side View
+
+![binary-tree-right-side-view](./resources/binary-tree-right-side-view.png)
+
+> The question is asking to get last element of level order traversal
+
+```java
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Queue;
+import java.util.LinkedList;
+
+public static List<Integer> binaryTreeRightSideView(Node<Integer> root) {
+    List<Integer> ans = new ArrayList<>();
+    Queue<Node<Integer>> queue = new LinkedList<>();
+    queue.offer(root);
+    while(!queue.isEmpty()) {
+        int n = queue.size();
+        for(int i = 0; i < n; i++) {
+            Node<Integer> node = queue.poll();
+            if(i == n - 1) ans.add(node.val);
+
+            if(node.left != null) queue.offer(node.left);
+            if(node.right != null) queue.offer(node.right);
+        }
+    }
+    return ans;
 }
 ```
