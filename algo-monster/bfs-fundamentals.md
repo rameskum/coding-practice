@@ -6,6 +6,7 @@ We can use a queue for BFS traversal.
 - [BFS](#bfs)
   - [Level Order Traversal](#level-order-traversal)
   - [ZigZag Level Order Traversal](#zigzag-level-order-traversal)
+  - [Binary Tree Right Side View](#binary-tree-right-side-view)
 
 ## Level Order Traversal
 
